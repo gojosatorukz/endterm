@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus List</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<h1>Bus Management</h1>
+
+<h2>Add New Bus</h2>
+<form id="busForm">
+    <input type="text" id="busNumber" placeholder="Bus Number" required>
+    <input type="text" id="routes" placeholder="Routes" required>
+    <input type="number" id="capacity" placeholder="Capacity" required>
+    <button type="submit">Add Bus</button>
+</form>
+
+<h2>All Buses (Sorted by Number)</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Bus Number</th>
+        <th>Routes</th>
+        <th>Capacity</th>
+    </tr>
+    </thead>
+    <tbody id="busList"></tbody>
+</table>
+
+<a href="search.html">Search Commuters</a>
+</body>
+</html>
