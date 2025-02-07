@@ -8,7 +8,7 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-<h1>Search Commuters</h1>
+<h1>Search & Manage Commuters</h1>
 
 <input type="text" id="searchName" placeholder="Enter commuter name">
 <button onclick="searchCommuters()">Search</button>
@@ -19,10 +19,19 @@
   <tr>
     <th>Name</th>
     <th>Ticket Number</th>
+    <th>Actions</th>
   </tr>
   </thead>
   <tbody id="commuterList"></tbody>
 </table>
+
+<h2>Update Commuter</h2>
+<form id="commuterForm">
+  <input type="hidden" id="commuterId">
+  <input type="text" id="commuterName" placeholder="Name" required>
+  <input type="text" id="commuterTicket" placeholder="Ticket Number" required>
+  <button type="submit">Update</button>
+</form>
 
 <a href="index.html">Back to Buses</a>
 </body>
