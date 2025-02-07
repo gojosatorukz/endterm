@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus List</title>
+    <title>Bus Management</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
 <h1>Bus Management</h1>
 
-<h2>Add New Bus</h2>
+<h2>Add or Update Bus</h2>
 <form id="busForm">
+    <input type="hidden" id="busId">
     <input type="text" id="busNumber" placeholder="Bus Number" required>
     <input type="text" id="routes" placeholder="Routes" required>
     <input type="number" id="capacity" placeholder="Capacity" required>
-    <button type="submit">Add Bus</button>
+    <button type="submit">Save Bus</button>
 </form>
 
 <h2>All Buses (Sorted by Number)</h2>
@@ -25,11 +26,12 @@
         <th>Bus Number</th>
         <th>Routes</th>
         <th>Capacity</th>
+        <th>Actions</th>
     </tr>
     </thead>
     <tbody id="busList"></tbody>
 </table>
 
-<a href="search.html">Search Commuters</a>
+<a href="search.html">Search & Manage Commuters</a>
 </body>
 </html>
